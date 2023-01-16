@@ -44,7 +44,7 @@ html {
     display: inline-block;
     width: 260px;
     height: 230px;
-    background-image: url(/images/image-equilibrium.jpg);
+    background-image: url(images/image-equilibrium.jpg);
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@ html {
     cursor: pointer;
 }
 .eye{
-    background-image: url(/images/icon-view.svg);
+    background-image: url(images/icon-view.svg);
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -111,7 +111,7 @@ html {
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
-    background-image: url(/images/icon-ethereum.svg);
+    background-image: url(images/icon-ethereum.svg);
 }
 .card__priceday_container p:first-child{
     display: flex;
@@ -133,7 +133,7 @@ html {
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
-    background-image: url(/images/icon-clock.svg);
+    background-image: url(images/icon-clock.svg);
 }
 .card__footer_container{
     border-top: 1px solid  var(--very-dark-blue-line);
@@ -149,7 +149,7 @@ html {
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
-    background-image: url(/images/image-avatar.png);
+    background-image: url(images/image-avatar.png);
 }
 .card__footer_container p{
     color:var(--soft-blue);
