@@ -1,0 +1,165 @@
+:root{
+    --very-dark-blue-main:hsl(217, 54%, 11%);
+    --very-dark-blue-card:hsl(216, 50%, 16%);
+    --very-dark-blue-line:hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --soft-blue:hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+    --cyan-opacity:hsl(178, 100%, 50%,0.6);
+}
+/* Font size (paragraph): 18px 
+font-family: 'Outfit', sans-serif; */
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding:0;
+}
+
+body{
+
+background-color: var(--very-dark-blue-main);
+font-family: 'Outfit', sans-serif;
+
+}
+html {
+
+    font-size:62.5%
+    
+    }
+
+.card{
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    background-color: var(--very-dark-blue-card);
+}
+.card__image{
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+    width: 260px;
+    height: 230px;
+    background-image: url(/images/image-equilibrium.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+  
+    
+
+}
+.card__image-hover{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cyan-opacity);
+    overflow: hidden;
+    transform: scale(0);
+    transition: .3s ease;
+    cursor: pointer;
+}
+.eye{
+    background-image: url(/images/icon-view.svg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+
+    
+}
+.card__image:hover .card__image-hover{
+    transform: scale(1);
+}
+
+.card__text_container h1{
+    color: white;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+.card__text_container h1:hover{
+    color: var(--cyan);
+    cursor: pointer;
+   
+}
+.card__text_container p{
+    color:var(--soft-blue);
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 300;
+}
+.card__text_container{
+    width: 250px
+}
+.card__priceday_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.card__priceday_container p:first-child span{
+    display: inline-block;
+    height: 15px;
+    width: 20px;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url(/images/icon-ethereum.svg);
+}
+.card__priceday_container p:first-child{
+    display: flex;
+    align-items: center;
+   color: var(--cyan);
+   font-size: 1.4rem;
+   font-weight: bold;
+}
+.card__priceday_container p:nth-child(2){
+    display: flex;
+    align-items: center;
+    color: var(--soft-blue);
+    font-size: 1.2rem;
+ }
+ .card__priceday_container p:nth-child(2) span {
+    display: inline-block;
+    height: 15px;
+    width: 20px;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url(/images/icon-clock.svg);
+}
+.card__footer_container{
+    border-top: 1px solid  var(--very-dark-blue-line);
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+.card__footer_img{
+    margin-right: 1rem;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url(/images/image-avatar.png);
+}
+.card__footer_container p{
+    color:var(--soft-blue);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.card__footer_container p span{
+    color: white;
+} 
+.card__footer_container p span:hover{
+    color:var(--cyan);
+    cursor: pointer;
+} 
